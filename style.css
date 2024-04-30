@@ -1,5 +1,6 @@
 #container
 {
+    font-family: roboto;
     resize: both;
     overflow: auto;
     display: grid;
@@ -9,16 +10,40 @@
     background-color: aqua;
 }
 
+/* SIDEBAR CSS */
+
 #sidebar
 {
     background-color: #db2777;
     grid-row: 1 / 3;
+    padding: 10px;
+
+    /* Grid Properties */
+    display: grid;
+    grid-template: 1fr 5fr 5fr / 1fr;
 }
+
+#sidebar #dash-logo
+{
+    color: white;
+    fill: white;
+
+    /* Grid Properties */
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* TOPBAR CSS */
 
 #top-bar
 {
     background-color: aliceblue;
 }
+
+/* MAIN BOX CSS */
 
 #main-box
 {
