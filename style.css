@@ -1,11 +1,18 @@
 #container
 {
     font-family: roboto;
-    display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
-    width: 1500px;
-    height: 900px;
+    display: inline-grid;
+    height: 1400px;
+    grid-template: 1fr / 1fr 4fr;
     background-color: aqua;
+}
+
+
+/* Main Right */
+#main-right
+{
+    display: grid;
+    grid-template: 195px 1fr / 1fr;
 }
 
 /* SIDEBAR CSS */
@@ -15,11 +22,12 @@
     background-color: #db2777;
     grid-row: 1 / 3;
     padding: 20px;
+    padding-top: 0; 
 
     /* Grid Properties */
     display: grid;
-    grid-template: 1fr 5fr 7fr 10fr / 1fr;
-    gap: 20px;
+    grid-template: 1fr 6fr 3fr 10fr / 1fr;
+    row-gap: 20px;
 }
 
 #sidebar #dash-logo
@@ -61,6 +69,7 @@
     color: white;
     fill: white;
     font-size: 12px;
+    padding-top: 10px;
 
     /* Grid Properties */
     display: grid;
@@ -76,6 +85,10 @@
     align-items: end;
 }
 
+#main-box
+{
+
+}
 
 /* TOPBAR CSS */
 
@@ -85,12 +98,12 @@
 
     /* Grid Properties */
     display: grid;
-    grid-template: 2fr 3fr / 1fr;
+    grid-template: 1fr 4fr / 1fr;
 }
 
 #top-bar .topbar-section-1
 {
-    
+    padding-top: 1%;
 
     /* Grid Properties */
     display: grid;
@@ -103,8 +116,9 @@
 
     /* Grid Properties */
     display: grid;
-    grid-template: 1fr 5fr 1fr / 1fr 5fr 1fr;
+    grid-template: 1fr 5fr 1fr / 4fr 90fr 5fr;
     align-items: center;
+    column-gap: 20px;
 
 }
 
@@ -116,7 +130,9 @@
     background-color: rgb(223, 234, 248);
     border-style: none;
     border-radius: 15px;
-    height: 25px;
+    height: 80%;
+
+    padding: 10px;
 }
 
 #top-bar .topbar-section-1 .searchbar img
@@ -143,9 +159,72 @@
 
 #top-bar .topbar-section-1 .noti img
 {
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
+#top-bar .topbar-section-2
+{
+    /* Grid Properties */
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+    
+    align-items: center;
+    justify-items: start;
+
+    padding-left: 40px;
+
+
+}
+
+#top-bar .topbar-section-2 .picture-name
+{
+    /* Grid Properties */
+    display: grid;
+    grid-template: 110px / 1fr 5fr;
+
+    align-items: center;
+
+    column-gap: 20px;
+}
+
+#top-bar .topbar-section-2 .picture-name img
+{
+    border-radius: 50px;
+}
+
+#top-bar .topbar-section-2 .picture-name .caption-name
+{
+    /* Grid Properties */
+    display: grid;
+    grid-template: 15px 50px / 1fr;
+    
+
+    justify-items: start;
+    align-items: center;
+}
+
+#top-bar .topbar-section-2 #button-group
+{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+
+    padding-right: 100px;
+
+    gap: 40px;
+}
+
+#top-bar .topbar-section-2 #button-group button
+{
+    color: white;
+    background-color: #db2777;
+    border-style: none;
+    border-radius: 45px;
+    width: 120px;
+    font-weight: bold;
+
+    font-size: 16px;
+    padding: 15px;
+}
 
 /* MAIN BOX CSS */
 
