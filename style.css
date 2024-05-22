@@ -154,6 +154,18 @@
 #main-container #project-container .project .project-icons
 {
     border: 1px rgb(67, 224, 28) solid;
+    padding-right: 10px;
+
+    /* Flex Properties */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#main-container #project-container .project .project-icons img
+{
+
 }
 
 
