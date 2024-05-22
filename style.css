@@ -3,7 +3,7 @@
     font-family: roboto;
     display: inline-grid;
     width: 1600px;
-    height: 1400px;
+    height: 1300px;
     grid-template: 1fr / 1fr 4fr;
     background-color: aqua;
 }
@@ -105,7 +105,7 @@
 
     /* Grid Properties */
     display: grid;
-    grid-template: 1fr / 1fr;
+    grid-template: 1fr 15fr / 1fr;
 }
 
 #main-container #project-container
@@ -115,16 +115,17 @@
 
     /* Grid Properties */
     display: grid;
-    grid-template: 1fr 4fr 4fr 4fr / 1fr 1fr;
+    grid-template: 4fr 4fr 4fr / 1fr 1fr;
     column-gap: 20px;
-    align-items: end;
+    align-items: start;
 }
 
 #main-container #project-container h2
 {
     border: 1px #2799db solid;
     grid-column: 1 / 3;
-    height: 100%;
+    height: 50%;
+    margin-top: 25px;
 }
 
 
