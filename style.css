@@ -71,6 +71,12 @@ body
     align-items: end;
 }
 
+#sidebar #sidebar-section-1 h2:hover
+{
+    color: aliceblue;
+    font-size: 25px;
+}
+
 #sidebar #sidebar-section-2
 {
     color: white;
@@ -90,6 +96,12 @@ body
     display: grid;
     grid-template: 1fr / 1fr 5fr;
     align-items: end;
+}
+
+#sidebar #sidebar-section-2 h2:hover
+{
+    color: aliceblue;
+    font-size: 25px;
 }
 
 #main-box
@@ -143,6 +155,16 @@ body
     /* Grid Properties */
     display: grid;
     grid-template: 3fr 1fr / 1fr 20fr;
+}
+
+#main-container #project-container .project:hover
+{
+    background-color: white;
+}
+
+#main-container #project-container .project:hover .color-strip
+{
+    background-color: rgb(226, 233, 128);
 }
 
 #main-container #project-container .project .color-strip
@@ -327,6 +349,11 @@ body
     padding: 15px;
 }
 
+#top-bar .topbar-section-2 #button-group button:hover
+{
+    background-color: #f75da2;
+}
+
 
 
 #a-container
@@ -418,5 +445,15 @@ body
 .user .bbox
 {
     margin-left: 25px;
+}
+
+.icon
+{
+    border-radius: 50px;
+}
+
+.icon:hover
+{
+    background-color: rgb(226, 233, 128);
 }
 
