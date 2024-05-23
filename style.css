@@ -1,8 +1,14 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
 #container
 {
     font-family: roboto;
     display: inline-grid;
-    width: 1800px;
+    width: 2000px;
     height: 1300px;
     grid-template: 1fr / 1fr 4fr;
     background-color: aqua;
@@ -91,6 +97,7 @@
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 80px;
+    background-color: rgb(218, 226, 231);
 
     /* Grid Properties */
     display: grid;
@@ -149,6 +156,7 @@
 #main-container #project-container .project .project-header-description
 {
     padding: 10px;
+    padding-left: 35px;
 
     /* Grid Properties */
     display: grid;
@@ -160,6 +168,14 @@
 #main-container #project-container .project .project-header-description h2
 {
     align-self: end;
+    margin-bottom: 2px;
+}
+
+#main-container #project-container .project .project-header-description p
+{
+    color: grey;
+    font-size: 20px;
+    margin-top: 0px;
 }
 
 
@@ -173,23 +189,6 @@
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
-}
-
-
-#a-container
-{
-    border: 2px #2799db solid;
-
-    /* Grid Properties */
-    display: grid;
-}
-
-#trend-container
-{
-    border: 1px #db2777 solid;
-
-    /* Grid Properties */
-    display: grid;
 }
 
 /* TOPBAR CSS */
@@ -328,10 +327,96 @@
     padding: 15px;
 }
 
-/* MAIN BOX CSS */
 
-#main-box
+
+#a-container
 {
-    background-color: rgb(218, 226, 231);
+    /* Grid Properties */
+    display: grid;
+    grid-template: 1fr 5fr / 1fr;
+    overflow: auto;
+    margin-right: 30px;
+    
+}
+
+#a-container h2
+{
+    margin-top: 25px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#a-container p
+{
+    color: grey;
+}
+
+#trend-container
+{
+    /* Grid Properties */
+    display: block;
+}
+
+#trend-container h2
+{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#trend-container .abox
+{
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-right: 40px;
+}
+
+.abox
+{
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: block;
+    padding: 50px;
+    margin-right: 10px;
+}
+
+
+.bbox
+{
+    padding-top: 10px;
+}
+
+.abox .bbox h3
+{
+    margin: 0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.abox .bbox p
+{
+    margin-top: 0px;
+}
+
+.user
+{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.user p
+{
+    margin-top: 50px;
+    color: grey;
+    font-size: 25px;
+}
+
+.user img
+{
+    border-radius: 50px;
+}
+
+.user .bbox
+{
+    margin-left: 25px;
 }
 
